@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "proxy": {
-    "/api": {
-      "target": "https://localhost:5002",
-      "secure": false
-    }
-  },
   "scripts": {
     "start": "node server.js",
     "watch": "nodemon",

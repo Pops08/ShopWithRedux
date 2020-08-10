@@ -10,7 +10,6 @@ import {
     TOGGLE_CART
   } from './actions';
 
-import { useReducer } from 'react';
 
 const initialstate = {
     products: [],
@@ -21,8 +20,7 @@ const initialstate = {
 }
 
 
-// function reducer (state = initialstate, action) {
-    const reducer = (state = initialstate, action) => {
+function reducer (state = initialstate, action) {
     switch (action.type) {
         //if action type value is the value of 'UPDATE_PRODUCTS', return a new state object with an updated products array 
         case UPDATE_PRODUCTS:
